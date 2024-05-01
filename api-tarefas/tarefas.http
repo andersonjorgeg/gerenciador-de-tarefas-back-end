@@ -1,0 +1,30 @@
+# listar todas as tarefas
+GET http://localhost:3000/api/tasks
+
+###
+
+# criar proxima tarefa
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Estudar Express.js"
+}
+
+###
+
+# Atualizar uma tarefa
+PUT http://localhost:3000/api/tasks/1
+Content-Type: application/json
+
+{
+  "title": "Tarefa atualizada",
+  "completed": 1
+}
+
+###
+# deletar uma tarefa
+DELETE http://localhost:3000/api/tasks/4
+
+# listar todas as tarefas novamente
+GET http://localhost:3000/api/tasks
